@@ -132,7 +132,7 @@ body {
 		height:	auto;
 		padding: 2rem;
 		background-color: var(--glass);
-		backdrop-filter: blur(5px);
+		backdrop-filter: blur(15px);
 		border-radius: 2rem;
 	}
 	.title-1 {
