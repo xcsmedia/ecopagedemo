@@ -1,0 +1,27 @@
+/* Var-colors */
+:root {
+	--negro:#000;
+	--blanco: #FFF0FF;
+	--verde: #107B7D;
+	--amarillo: #E4A06B;
+	--naranja: #FD6D6B;
+	--morado: #E5AAE4;
+	--piel: #FFE3D1;
+	--glass: rgba(255,255,255, 0.06);
+}
+
+/* Var-fonts */
+@font-face {
+	font-family: 'Arboria-Black';
+	src: url("../fonts/Arboria-Black.woff");
+}
+@font-face {
+	font-family: 'Arboria-Bold';
+	src: url("../fonts/Arboria-Bold.woff");
+}
+@font-face {
+	font-family: 'Arboria-Light';
+	src: url("../fonts/Arboria-Light.woff");
+}
+
+
