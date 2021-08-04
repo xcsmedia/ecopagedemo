@@ -45,7 +45,7 @@
 }
 .nav-bar li a:hover:after {
   width: 100%;
-  background: var(--morado);
+  background: var(--blanco);
 }
 
 
@@ -70,7 +70,7 @@
 	.nav-bar {
 	margin          : auto;
 	position        : fixed;
-	background: var(--negro); 
+	background: var(--morado); 
 	top             : 0;
 	right: 0;
 	width           : 100%;
