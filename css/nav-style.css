@@ -61,13 +61,13 @@
 	background: var(--glassdark);
 	border-radius: 1rem;
 	padding: 0;
-	margin: 5%;
+	margin: 10%;
 	padding: 10px 15px;
 	backdrop-filter: blur(1.5rem);
 	-webkit-backdrop-filter: blur(1.5rem);
 	}
 	.nav-bar {
-	border-radius: 1rem;
+	border-radius: 0 0 1rem 1rem;
 	margin          : auto;
 	position        : fixed;
 	background: var(--negro); 
