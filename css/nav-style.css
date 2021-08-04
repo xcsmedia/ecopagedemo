@@ -57,6 +57,7 @@
 	position: fixed;
 	}
 	.nav {
+	margin: 5%
 	z-index: 15;
 	background: var(--glassdark);
 	border-radius: 1rem;
