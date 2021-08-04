@@ -103,6 +103,30 @@ body {
 	margin: 0 0 0.5rem 0;
 	font-family: 'Prata';
 }
+.text-box-2 h1:after {
+	content: "";
+	display: block;
+	margin-top: 0.5rem;
+	width: 0%;
+	height: 2px;
+	background-color: var(--negro);
+}
+@keyframes lineANIMATE {
+ 	30% {
+ 	width: 25%;
+ 	}
+ 	70% {
+ 	width: 50%;
+ 	opacity: 0.1;
+ 	}
+ 	100% {
+ 	width: 50%;
+ 	opacity: 1;
+ 	}
+}
+.text-box-2 h1:after {
+	animation: lineANIMATE 5s infinite;
+}
 .text-box-2 p {
 	text-align: justify;
 	margin: 0 0 0.5rem 0;
@@ -204,8 +228,11 @@ body {
 	.text-box-2 h1{
 		text-align: center;
 	}
+	.text-box-2 h1:after {
+		margin: 1rem auto;
+	}
 	.text-box-2 h2 {
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 	.img-box-2 {
 		margin-top: 1rem;

@@ -37,7 +37,7 @@
   margin-top: 0.5rem;
   transition: all .8s;
 }
-.logo-img-000 {
+.logo-img-fff {
 	width: 8rem;
 }
 .menu-icon {
@@ -55,22 +55,22 @@
 	padding: 0;
 	z-index: 5;
 	position: fixed;
+	width: 100%;
 	}
 	.nav {
 	z-index: 15;
 	background: var(--glassdark);
 	border-radius: 1rem;
 	padding: 0;
-	width: 90%;
+	max-width: 90%;
 	margin-top: 5%;
 	padding: 10px 15px;
 	backdrop-filter: blur(1.5rem);
 	-webkit-backdrop-filter: blur(1.5rem);
 	}
 	.nav-bar {
-	margin          : auto;
 	position        : fixed;
-	background: var(--morado); 
+	background: var(--negro); 
 	top             : 0;
 	right: 0;
 	width           : 100%;
@@ -112,9 +112,6 @@
 	}
 	.logo-img-fff {
 		width: 5rem;
-	}
-	.logo-img-000 {
-		display: none;
 	}
 	.menu-icon {
 	display  : block;
