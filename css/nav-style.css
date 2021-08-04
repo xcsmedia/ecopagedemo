@@ -68,7 +68,7 @@
 	}
 	.nav-bar {
 	border-radius: 	1rem;
-	margin          : auto;
+	margin          : 0;
 	position        : fixed;
 	background: var(--negro); 
 	top             : 0;
