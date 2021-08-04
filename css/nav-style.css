@@ -69,23 +69,24 @@
 	.nav-bar {
 	margin          : auto;
 	position        : fixed;
-	background: var(--blanco); 
+	background: var(--negro); 
 	top             : 0;
 	right: 0;
 	width           : 100%;
 	flex-direction  : column;
 	display         : flex;
 	transition      : all 0.5s ease;
-	height: 0;
+	height: 60vh;
 	align-items     : center;
 	justify-content : center;
 	opacity: 0;
+	transform: translateY(-100%);
 	}
 	.nav-bar li {
 	padding: 15px;
 	}
 	.nav-bar li a {
-	color: var(--negro);
+	color: var(--blanco);
 	padding: 0;
 	}
 	.nav-bar li a:after {
@@ -93,10 +94,13 @@
 	}
 
 	@keyframes textNAV {
-	100% {
-		width: 100%;
+	30% {
+		width: 50%;
 		height: 1px;
 		background: var(--blanco);
+	}
+	100% {
+		width: 100%;
 	}
 
 	}
@@ -121,7 +125,7 @@
 	.nav-bar.active {
 	transition: all 0.5s ease;
 	opacity: 1;
-	height: 50vh;
+	transform: translateY(0);
 	}
 	.overlay {
 	top: 0;
