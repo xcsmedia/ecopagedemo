@@ -67,7 +67,6 @@
 	-webkit-backdrop-filter: blur(1.5rem);
 	}
 	.nav-bar {
-	border-radius: 	1rem;
 	margin          : 0;
 	position        : fixed;
 	background: var(--negro); 
