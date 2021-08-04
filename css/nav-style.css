@@ -67,16 +67,16 @@
 	-webkit-backdrop-filter: blur(1.5rem);
 	}
 	.nav-bar {
-	margin          : auto;
+	margin          : 5%;
 	position        : fixed;
 	background: var(--negro); 
 	top             : 0;
 	right: 0;
-	width           : 100%;
+	width           : 90%;
 	flex-direction  : column;
 	display         : flex;
 	transition      : all 0.5s ease;
-	height: 60vh;
+	height: 50vh;
 	align-items     : center;
 	justify-content : center;
 	opacity: 0;
