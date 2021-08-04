@@ -61,18 +61,19 @@
 	background: var(--glassdark);
 	border-radius: 1rem;
 	padding: 0;
-	margin: 5%;
+	width: 90%;
+	margin-top: 5%;
 	padding: 10px 15px;
 	backdrop-filter: blur(1.5rem);
 	-webkit-backdrop-filter: blur(1.5rem);
 	}
 	.nav-bar {
-	margin          : 5%;
+	margin          : auto;
 	position        : fixed;
 	background: var(--negro); 
 	top             : 0;
 	right: 0;
-	width           : 90%;
+	width           : 100%;
 	flex-direction  : column;
 	display         : flex;
 	transition      : all 0.5s ease;
