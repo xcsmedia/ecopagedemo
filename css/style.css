@@ -150,14 +150,8 @@ body {
 		padding: 2rem;
 		background-color: var(--glass);
 		border-radius: 2rem;
+	    	-webkit-backdrop-filter: blur(0.3rem);
 	}
-	
-	/* Support of blur */
-	@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  	.content-1 {
-    -webkit-backdrop-filter: blur(0.3rem);
-    backdrop-filter: blur(0.3rem);
-  	}
 	.title-1 {
 		width: 100%;
 		text-align: left;
