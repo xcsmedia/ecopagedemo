@@ -1,5 +1,11 @@
-/* Nav scroll effect */
+/* Scroll down of buttons */
 
+const scroll = new SmoothScroll('a[href*="#"]', {
+speed: 600
+});
+
+
+/* Nav scroll effect */ 
 ;(function(document, window, index) {
   'use strict';
 
@@ -42,12 +48,3 @@
   });
 
 }(document, window, 0));
-
-/* Scroll down of buttons */
-
-const scroll = new SmoothScroll('a[href*="#"]', {
-speed: 600
-});
-
-/* Clean URL */
-var loc = window.location.href, index = loc.indexOf('#'); if (index > 0) { window.location = loc.substring(0, index); }

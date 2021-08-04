@@ -1,7 +1,7 @@
 /* Nav-all */
 .nav-space {
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	display: flex;
 	justify-content: center;
 	padding: 25px;
@@ -52,26 +52,34 @@
 /* Responsive */
 @media only screen and (max-width: 1080px) {
 	.nav-space {
-	padding: 20px 10px 15px 10px;
+	padding: 0;
 	z-index: 5;
 	position: fixed;
-	background: var(--negro);
+	}
+	.nav {
+	z-index: 15;
+	background: var(--glassdark);
+	border-radius: 1rem;
+	padding: 0;
+	margin: 5%;
+	padding: 10px 15px;
+	backdrop-filter: blur(1.5rem);
+	-webkit-backdrop-filter: blur(1.5rem);
 	}
 	.nav-bar {
+	border-radius: 1rem;
 	margin          : auto;
 	position        : fixed;
 	background: var(--negro); 
 	top             : 0;
 	right: 0;
 	width           : 100%;
-	height          : 50vh;
 	flex-direction  : column;
 	display         : flex;
-	transition      : all 0.8s ease;
-	z-index: 10;
+	transition      : all 0.5s ease;
+	height: 0;
 	align-items     : center;
 	justify-content : center;
-	transform: translateY(-100%);
 	opacity: 0;
 	}
 	.nav-bar li {
@@ -82,7 +90,21 @@
 	padding: 0;
 	}
 	.nav-bar li a:after {
-	margin: 0;
+		display: none;
+	}
+
+	@keyframes textNAV {
+	100% {
+		width: 100%;
+		height: 1px;
+		background: var(--blanco);
+	}
+	}
+	.nav-bar li a:after {
+		height: 1px;
+		display: block;
+		animation: textNAV 2s infinite;
+	}
 	}
 	.logo-img-fff {
 	width: 5rem;
@@ -98,9 +120,9 @@
 	color: var(--blanco);
 	}
 	.nav-bar.active {
-	transform: translateX(0);
-	transition: all 0.8s ease;
+	transition: all 0.5s ease;
 	opacity: 1;
+	height: 50vh;
 	}
 	.overlay {
 	top: 0;
@@ -110,14 +132,9 @@
 	position: fixed;
 	background: rgb(0, 0, 0, .85);
 	display: none;
+	backdrop-filter: blur(0.2rem);
+	-webkit-backdrop-filter: blur(0.2rem);
 	}
-
-	/* Support of blur */
-	@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .overlay {
-    -webkit-backdrop-filter: blur(0.2rem);
-    backdrop-filter: blur(0.2rem);
-  }
 	.overlay.active {
 	z-index: 5;
 	display: block;
