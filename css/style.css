@@ -397,9 +397,9 @@ body {
 		height: 50vh;
 	}
 	.wm-1 {
+		background-size: cover !important;
 		background-position: center;
-		background-attachment: fixed;
-		-webkit-background-attachment: fixed;
+		background-attachment: fixed !important;
 		height: 60vh;
 		width: 100%;
 		border-radius: 0;
@@ -424,9 +424,9 @@ body {
 		height: 50vh;
 	}
 	.wm-2 {
+		background-size: cover !important;
 		background-position: center;
-		background-attachment: fixed;
-		-webkit-background-attachment: fixed;
+		background-attachment: fixed !important;
 		height: 70vh;
 		width: 100%;
 	}
