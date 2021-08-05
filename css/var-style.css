@@ -27,5 +27,12 @@
 	font-family: 'Arboria-Light';
 	src: url("../fonts/Arboria-Light.woff");
 }
-
+@font-face {
+	font-family: 'responblack';
+		src: url("../fonts/respon-bold.woff");
+}
+@font-face {
+	font-family: 'responlight';
+		src: url("../fonts/respon-light.woff");
+}
 

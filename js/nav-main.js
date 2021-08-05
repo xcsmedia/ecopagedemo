@@ -1,6 +1,6 @@
 const menu = document.querySelector('.nav-bar');
-const btnON = document.querySelector('.menu-icon');
-const btnOFF = document.querySelector('.menu-icon i');
+const btnON = document.querySelector('.ON');
+const btnOFF = document.querySelector('.OFF');
 const overlay = document.querySelector('.overlay');
 
 btnON.addEventListener('click' , () => {
@@ -8,9 +8,24 @@ btnON.addEventListener('click' , () => {
 	overlay.classList.toggle('active');
 
 if(menu.classList.contains('active')){
-	btnOFF.setAttribute('class','fas fa-times');
+	btnOFF.style.display='block';
+	btnON.style.display='none';
 }else{
-	btnOFF.setAttribute('class','fas fa-bars')
+	btnOFF.style.display='none';
+	btnON.style.display='block';
+}
+});
+
+btnOFF.addEventListener('click' , () => {
+	menu.classList.toggle('active');
+	overlay.classList.toggle('active');
+
+if(menu.classList.contains('active')){
+	btnOFF.style.display='block';
+	btnON.style.display='none';
+}else{
+	btnOFF.style.display='none';
+	btnON.style.display='block';
 }
 });
 overlay.addEventListener('click' , () => {
@@ -18,9 +33,11 @@ overlay.addEventListener('click' , () => {
 	overlay.classList.toggle('active');
 
 if(menu.classList.contains('active')){
-	btnOFF.setAttribute('class','fas fa-times');
+	btnOFF.style.display='block';
+	btnON.style.display='none';
 }else{
-	btnOFF.setAttribute('class','fas fa-bars')
+	btnOFF.style.display='none';
+	btnON.style.display='block';
 }
 });
 
@@ -34,9 +51,11 @@ section1.addEventListener('click' , () => {
 	overlay.classList.toggle('active');
 
 if(menu.classList.contains('active')){
-	btnOFF.setAttribute('class','fas fa-times');
+	btnOFF.style.display='block';
+	btnON.style.display='none';
 }else{
-	btnOFF.setAttribute('class','fas fa-bars')
+	btnOFF.style.display='none';
+	btnON.style.display='block';
 }
 });
 section2.addEventListener('click' , () => {
@@ -44,9 +63,11 @@ section2.addEventListener('click' , () => {
 	overlay.classList.toggle('active');
 
 if(menu.classList.contains('active')){
-	btnOFF.setAttribute('class','fas fa-times');
+	btnOFF.style.display='block';
+	btnON.style.display='none';
 }else{
-	btnOFF.setAttribute('class','fas fa-bars')
+	btnOFF.style.display='none';
+	btnON.style.display='block';
 }
 });
 section3.addEventListener('click' , () => {
@@ -54,8 +75,10 @@ section3.addEventListener('click' , () => {
 	overlay.classList.toggle('active');
 
 if(menu.classList.contains('active')){
-	btnOFF.setAttribute('class','fas fa-times');
+	btnOFF.style.display='block';
+	btnON.style.display='none';
 }else{
-	btnOFF.setAttribute('class','fas fa-bars')
+	btnOFF.style.display='none';
+	btnON.style.display='block';
 }
 });

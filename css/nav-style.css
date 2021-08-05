@@ -4,7 +4,7 @@
 	position: absolute;
 	display: flex;
 	justify-content: center;
-	padding: 30px;
+	padding: 30px 0px;
 }
 .nav {
 	width: 90%;
@@ -37,20 +37,41 @@
   margin-top: 0.5rem;
   transition: all .8s;
 }
-.logo-img-fff {
-	width: 8rem;
+.logo-big {
+	width: 10rem;
 }
-.menu-icon {
+.logo-img-fff {
+	width: 12rem;
+}
+.ON {
 	display: none;
 }
 .nav-bar li a:hover:after {
   width: 100%;
   background: var(--blanco);
 }
+.space-logo {
+	display: none;
+}
+.menu-icon {
+	display: none;
+}
+.logo-mini {
+	display: none;
+}
+.OFF {
+	display: none;
+}
 
 
 /* Responsive */
 @media only screen and (max-width: 1080px) {
+	.space-logo {
+	display: block;
+	}
+	.menu-icon {
+	display: block;
+	}
 	.nav-space {
 	padding: 0;
 	z-index: 5;
@@ -62,9 +83,11 @@
 	background: var(--glassdark);
 	border-radius: 1rem;
 	padding: 0;
-	max-width: 90%;
+	width: 90%;
 	margin-top: 5%;
+	align-items: center;
 	padding: 10px 15px;
+	position: sticky;
 	backdrop-filter: blur(1.5rem);
 	-webkit-backdrop-filter: blur(1.5rem);
 	}
@@ -111,14 +134,23 @@
 		animation: textNAV 2s infinite;
 	}
 	.logo-img-fff {
+	 display: none;
+	}
+	.logo-mini {
+		display: block;
 		width: 5rem;
 	}
-	.menu-icon {
+	.ON {
 	display  : block;
 	position : relative;
 	z-index: 15;
-	font-size: 1.5rem;
-	color: var(--blanco);
+	width: 1.5rem;
+	}
+	.OFF {
+	display  : none;
+	position : relative;
+	z-index: 15;
+	width: 1.3rem;
 	}
 	.nav-bar.active {
 	transition: all 0.5s ease;

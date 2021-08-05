@@ -1,7 +1,7 @@
 /* Scroll down of buttons */
 
 const scroll = new SmoothScroll('a[href*="#"]', {
-speed: 600
+speed: 700
 });
 
 
