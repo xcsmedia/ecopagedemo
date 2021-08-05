@@ -1,14 +1,17 @@
 /* Var-colors */
 :root {
 	--negro:#000;
-	--blanco: #FFF0FF;
+	--blanco: #FFF;
 	--verde: #107B7D;
 	--amarillo: #E4A06B;
 	--naranja: #FD6D6B;
-	--morado: #E5AAE4;
+	--moradodark: #28232E;
 	--piel: #FFE3D1;
 	--glass: rgba(255,255,255, 0.06);
 	--glassdark: rgba(0,0,0, 0.6);
+	--gradient1: linear-gradient(90deg, #f1ffc4, #ffcaaf);
+	--gradient2: linear-gradient(180deg, #FD6D6B,#E4A06B);
+	--gradient3: linear-gradient(360deg, #28232E, #393052);
 }
 
 /* Var-fonts */
