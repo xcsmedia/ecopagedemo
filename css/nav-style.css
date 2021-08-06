@@ -90,14 +90,17 @@
 /* Start nav */
 .nav-space {
 	z-index: 100;
-	margin: 0;
+	margin: 0;    
 	position: fixed;
+	width: 100%;
 }
 .nav-bar {
 	margin-top: 1rem;
 	width: 90%;
 	padding: 1rem;
 	background: var(--glassdark);
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
 	border-radius: 10px;
 }
 .space-logo {
@@ -111,13 +114,12 @@
 .menu {
 	z-index: 80;
 	height: 50vh;
-	width: 90%;
+	width: 100%;
 	top: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
-	margin-top: 1rem;
-	background: var(--negro);
+	background: var(--gradient1);
 	position: fixed;
 	display: block;
 	display: flex;
@@ -146,17 +148,17 @@
 
 /* Overlay shadow */
 .overlay {
-	z-index: 50;
 	top: 0;
 	left: 0;
 	height: 100vh;
 	position: fixed;
 	width: 100%;
 	background: rgb(0, 0, 0, .85);
-	backdrop-filter: blur(0.2rem) !important;
-	-webkit-backdrop-filter: blur(0.2rem) !important;
+	backdrop-filter: blur(0.2rem);
+	-webkit-backdrop-filter: blur(0.2rem);
 	display: none;
 	opacity: 0;
+	z-index: -1;
 }
 
 /* Funciones */
