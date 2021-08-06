@@ -6,14 +6,13 @@ speed: 700
 
 
 /* Nav scroll effect */ 
-;(function(document, window, index) {
+  ;(function(document, window, index) {
   'use strict';
 
   var elSelector = '.nav-space',
     element = document.querySelector(elSelector);
 
   if (!element) return true;
-
   var elHeight = 0,
     elTop = 0,
     dHeight = 0,
