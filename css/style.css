@@ -1,4 +1,9 @@
 /* Elements of page */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
 html {
 	font-size: 16px;
 }
@@ -82,6 +87,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow-x: hidden;
 }
 .content-2 {
 	display: flex;
@@ -89,7 +95,6 @@ body {
 	align-items: center;
 	width: 100%;
 	background: var(--gradient1);
-	position: relative;
 }
 .text-box-2 {
 	padding: 5rem 0;
@@ -394,7 +399,7 @@ body {
 	background-position: center;
 	flex-direction: column;
 	height: 100vh;
-	justify-content: flex-end;
+	justify-content: center;
 	position: relative;
 	z-index: 3;
 	}
@@ -609,6 +614,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	}
+
 	/* Media of mobile text */
 	@media only screen and (max-width: 400px) {
 

@@ -7,8 +7,7 @@ window.sr = ScrollReveal();
 	sr.reveal('.text-box-2', {
 	duration: 2000,
 	origin: 'right',
-	distance: '400px',
-	reset: true,
+	distance: '200px',
 	});
 	sr.reveal('.text-box-3', {
 	reset: false,

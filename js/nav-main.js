@@ -1,4 +1,4 @@
-const menu = document.querySelector('.nav-bar');
+const menu = document.querySelector('.menu');
 const btnON = document.querySelector('.ON');
 const btnOFF = document.querySelector('.OFF');
 const overlay = document.querySelector('.overlay');
