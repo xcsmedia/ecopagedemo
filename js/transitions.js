@@ -6,9 +6,9 @@ window.sr = ScrollReveal();
 	});
 	sr.reveal('.text-box-2', {
 	duration: 2000,
-	origin: 'bottom',
-	distance: '100px',
-	reset: false,
+	origin: 'right',
+	distance: '400px',
+	reset: true,
 	});
 	sr.reveal('.text-box-3', {
 	reset: false,
